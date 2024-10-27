@@ -8,5 +8,13 @@
 <body>
     <h1>Onboarding Complete</h1>
     <p>You can now return to the app.</p>
+    <button onclick="redirectToApp()">Go to Rocket Bet</button>
+
+    <script>
+        function redirectToApp() {
+            // Redirect using the custom URL scheme to bring the user back to the app
+            window.location.href = "rocketbet://onboarding_complete";
+        }
+    </script>
 </body>
 </html>
